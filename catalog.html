@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="utf-8"> <!--Кодировка -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Skypro Homework</title> <!-- Заголовок -->
@@ -13,12 +13,124 @@
         .full-height {
             height: 90vh;
         }
+        .indentation {
+            width: 400px
+        }
+        .color {
+            color: white
+        }
     </style>
-</head>
+  </head>
 <body>
-    <div class="row">
 
+    <div class="row">
+        <div class="col-2 bg-dark text-white full-height">
+            <nav >
+                <div class="container-fluid">
+                 <a class="navbar-brand" href="#">
+
+                     <img src="img/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                        <b>Меню</b><br>
+                        _________________________________________<br>
+                 </a>
+                 </div>
+                   </nav>
+
+            <a class="btn btn-primary w-100 color mt-2"
+               href="http://localhost:63342/FrontHomework/main.html?_ijt=fi0acj4cjcfvognelcv8klvnm0&_ij_reload=RELOAD_ON_SAVE" role="button">Главная</a><br>
+
+            <a href="http://localhost:63342/FrontHomework/category.html?_ijt=fi0acj4cjcfvognelcv8klvnm0&_ij_reload=RELOAD_ON_SAVE"
+               class="btn color" role="button" data-bs-toggle="button">Категории</a><br>
+
+            <a href="http://localhost:63342/FrontHomework/catalog.html?_ijt=fi0acj4cjcfvognelcv8klvnm0&_ij_reload=RELOAD_ON_SAVE"
+               class="btn color" role="button" data-bs-toggle="button">Заказы</a><br>
+
+            <a href="http://localhost:63342/FrontHomework/contacts.html?_ijt=vfbutj62es7mh3ulecfdh22b6m&_ij_reload=RELOAD_ON_SAVE"
+               class="btn color" role="button" data-bs-toggle="button">Контакты</a><br>
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-5">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="img/Улитка.jpg" width="36" height="36"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Пользователь
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                    <li><a class="dropdown-item" href="#">Профиль</a></li>
+                                    <li><a class="dropdown-item" href="#">Выход</a></li>
+                                </ul>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+        </div>
+        <div class="col-10 mt-5">
+            <h1 style="text-align:center;">Каталог</h1>
+                        <div class="row row-cols-1 row-cols-md-2 g-4 mt-5">
+              <div class="col">
+                <div class="card">
+                  <img src="img/яблоко.jpg" class="card-img-top" alt="..." width="200" height="180">
+                  <div class="card-body">
+                    <h5 class="card-title">Яблочко</h5>
+                    <p class="card-text">Самое вкусное яблоко</p>
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-outline-primary">Посмотреть</button>
+                        <button type="button" class="btn btn-outline-primary">Купить</button>
+                    </div>
+                    <p class="text-end text-secondary">9 минут</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="img/мандарин.jpg" class="card-img-top" alt="..." width="200" height="180">
+                  <div class="card-body">
+                    <h5 class="card-title">Мандаринка</h5>
+                    <p class="card-text">Самая вкусная мандаринка</p>
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-outline-primary">Посмотреть</button>
+                      <button type="button" class="btn btn-outline-primary">Купить</button>
+                    </div>
+                    <p class="text-end text-secondary">9 минут</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="img/помидор.jpg" class="card-img-top" alt="..." width="200" height="180">
+                  <div class="card-body">
+                    <h5 class="card-title">Помидорка</h5>
+                    <p class="card-text">самая вкусная помидорка</p>
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-outline-primary">Посмотреть</button>
+                      <button type="button" class="btn btn-outline-primary">Купить</button>
+                    </div>
+                    <p class="text-end text-secondary">9 минут</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="img/лимон.jpg" class="card-img-top" alt="..." width="200" height="180">
+                  <div class="card-body">
+                    <h5 class="card-title">Лимончик</h5>
+                    <p class="card-text">Самый вкусный лимончик</p>
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-outline-primary">Посмотреть</button>
+                      <button type="button" class="btn btn-outline-primary">Купить</button>
+                    </div>
+                    <p class="text-end text-secondary">9 минут</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
     </div>
 </body>
-
 </html>
