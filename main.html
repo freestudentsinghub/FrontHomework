@@ -13,27 +13,72 @@
         .full-height {
             height: 90vh;
         }
+        .indentation {
+            width: 400px
+        }
+        .color {
+            color: white
+        }
+        .user-button-container {
+            position: absolute;
+            bottom: 20px; /* Отступ от низа */
+            left: 0; /* Выравнивание по левому краю */
+            right: 0; /* Выравнивание по правому краю */
+            text-align: center; /* Центрирование кнопки */
+        }
     </style>
   </head>
 <body>
+
     <div class="row">
-        <div class="col-2 p-3 mb-2 bg-primary-subtle text-primary-emphasis full-height">
+        <div class="col-2 t-5 bg-dark text-white full-height">
+            <nav >
+                <div class="container-fluid">
+                 <a class="navbar-brand" href="#">
 
-            <h4>Меню</h4>
-            <a class="btn btn-primary"
-               href="http://localhost:63342/FrontHomework/main.html?_ijt=go6ve5pe9k8actni1g84oj703b&_ij_reload=RELOAD_ON_SAVE" role="button">Главная</a><br>
+                     <img src="img/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                        <b>Меню</b><br>
+                        _________________________________________<br>
+                 </a>
+                 </div>
+                   </nav>
 
-            <a href="http://localhost:63342/FrontHomework/category.html?_ijt=3l6jki7t0i8vl6ti4jgmsnb4k1&_ij_reload=RELOAD_ON_SAVE"
-               class="btn" role="button" data-bs-toggle="button">Категории</a><br>
+            <a class="btn btn-primary w-100 color mt-2"
+               href="http://localhost:63342/FrontHomework/main.html?_ijt=fi0acj4cjcfvognelcv8klvnm0&_ij_reload=RELOAD_ON_SAVE" role="button">Главная</a><br>
 
-            <a href="http://localhost:63342/FrontHomework/catalog.html?_ijt=sbuma46u8b8bc3b5hc4dccmmg9&_ij_reload=RELOAD_ON_SAVE"
-               class="btn" role="button" data-bs-toggle="button">Заказы</a><br>
+            <a href="http://localhost:63342/FrontHomework/category.html?_ijt=fi0acj4cjcfvognelcv8klvnm0&_ij_reload=RELOAD_ON_SAVE"
+               class="btn color" role="button" data-bs-toggle="button">Категории</a><br>
 
-            <a href="http://localhost:63342/FrontHomework/contacts.html?_ijt=3958k1nlkn57ou1p7edf8b8cs9&_ij_reload=RELOAD_ON_SAVE"
-               class="btn" role="button" data-bs-toggle="button">Контакты</a><br>
+            <a href="http://localhost:63342/FrontHomework/catalog.html?_ijt=fi0acj4cjcfvognelcv8klvnm0&_ij_reload=RELOAD_ON_SAVE"
+               class="btn color" role="button" data-bs-toggle="button">Заказы</a><br>
 
-        </div>
-        <div class="col-10 text-center">
+            <a href="http://localhost:63342/FrontHomework/contacts.html?_ijt=vfbutj62es7mh3ulecfdh22b6m&_ij_reload=RELOAD_ON_SAVE"
+               class="btn color" role="button" data-bs-toggle="button">Контакты</a><br>
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-5">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="img/Улитка.jpg" width="36" height="36"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Пользователь
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                    <li><a class="dropdown-item" href="#">Профиль</a></li>
+                                    <li><a class="dropdown-item" href="#">Выход</a></li>
+                                </ul>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+        </div><!-- Menu -->
+        <div class="col-10 t-10 text-center mt-5">
             <h1 class="text-center">Главная</h1> <!-- Заголовок страницы -->
             <h6 class="fw-light text-center"  >Вы находитесь на сайте, предназначеном для продажи товаров.</h6>
             <div class="row">
@@ -44,7 +89,7 @@
                     <h3 class="card-title">$ 100</h3>
                     <p class="card-text">10 users included, 2 GB of storage,
                                          Email support, Help center access</p>
-                    <a href="http://localhost:63342/FrontHomework/contacts.html?_ijt=3958k1nlkn57ou1p7edf8b8cs9&_ij_reload=RELOAD_ON_SAVE"
+                    <a href="http://localhost:63342/FrontHomework/contacts.html?_ijt=vfbutj62es7mh3ulecfdh22b6m&_ij_reload=RELOAD_ON_SAVE"
                        class="btn btn-outline-primary w-100" >Купить</a>
                     </div>
                 </div>
@@ -53,10 +98,10 @@
                     <div class="card">
                         <h5 class="card-header">Товар 1</h5>
                         <div class="card-body">
-                        <h3 class="card-title">$ 100</h3>
+                            <h3 class="card-title">$ 100</h3>
                         <p class="card-text">10 users included, 2 GB of storage,
                                              Email support, Help center access</p>
-                        <a href="http://localhost:63342/FrontHomework/contacts.html?_ijt=3958k1nlkn57ou1p7edf8b8cs9&_ij_reload=RELOAD_ON_SAVE"
+                        <a href="http://localhost:63342/FrontHomework/contacts.html?_ijt=vfbutj62es7mh3ulecfdh22b6m&_ij_reload=RELOAD_ON_SAVE"
                            class="btn btn-outline-primary w-100" >Купить</a>
                     </div>
                     </div>
@@ -68,7 +113,7 @@
                             <h3 class="card-title">$ 100</h3>
                             <p class="card-text">10 users included, 2 GB of storage,
                                                  Email support, Help center access</p>
-                            <a href="http://localhost:63342/FrontHomework/contacts.html?_ijt=3958k1nlkn57ou1p7edf8b8cs9&_ij_reload=RELOAD_ON_SAVE"
+                            <a href="http://localhost:63342/FrontHomework/contacts.html?_ijt=vfbutj62es7mh3ulecfdh22b6m&_ij_reload=RELOAD_ON_SAVE"
                                class="btn btn-outline-primary w-100" >Купить</a>
                         </div>
                     </div>
@@ -76,9 +121,7 @@
             </div>
         </div>
     </div>
-<footer>
-    <button type="button" class="btn btn-primary btn-lg">Пользователь</button>
-</footer>
+
 </body>
 
 </html>
